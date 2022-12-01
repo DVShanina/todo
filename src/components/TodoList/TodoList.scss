@@ -1,0 +1,86 @@
+@import "/src/variables.scss";
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    width: 850px;
+    padding: 0 10px;
+    color: white;
+    font-size: $font-size;
+    font-family: $font-family;
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+        width: 100%;
+    }
+    &__items {
+        display: flex;
+        gap: 15px;
+        background-color: gray;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: $border-radius;
+    }
+    &__title,
+    &__date {
+        width: 150px;
+    }
+    &__description {
+        flex-grow: 1;
+    }
+    &__file {
+        width: 75px;
+    }
+    &__a,
+    &__a:active {
+        text-decoration: none;
+        color: white;
+    }
+    &__complete,
+    &__edit,
+    &__button {
+        width: 30px;
+        background-color: rgba(0,0,0,0);
+        height: 35px;
+        border: none;
+        cursor: pointer;
+    }
+    &__input,
+    &__input2,
+    &__input3 {
+        height: 18px;
+        font-size: $font-size;
+        padding: 8px;
+        border-radius: $border-radius;
+        background-color: rgba(255,255,255,0.5);
+        border: none;
+        font-family: $font-family;
+    }
+    &__input,
+    &__input3 {
+        width: 130px;
+    }
+    &__input2 {
+        flex-grow: 1;
+    }
+    &__save {
+        padding: 8px;
+        width: 60px;
+        background-color:white;
+        height: 35px;
+        border-radius: $border-radius;
+        border: none;
+        cursor: pointer;
+        font-family: $font-family;
+    }
+    &__empty {
+        color: white;
+    }
+}

@@ -1,0 +1,75 @@
+@import "/src/variables.scss";
+
+.todo-form {
+    display: flex;
+    gap: 15px;
+    justify-content:space-around;
+    align-items: center;
+    width: 850px;
+    height: 100px;
+    background-color: orange;
+    padding: 0 10px;
+    font-size: $font-size;
+    font-family: $font-family;
+    &__title,
+    &__description,
+    &__date {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 80px;
+    }
+    &__title,
+    &__date {
+        width: 150px;
+    }
+    &__file {
+        width: 100px;
+        height: 70px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    &__description {
+        flex-grow: 1;
+    }
+    &__input,
+    &__input2,
+    &__input3,
+    &__button {
+        height: 35px;
+        padding: 8px;
+        border-radius: $border-radius;
+        border: none;
+        font-family: $font-family;
+    }
+    &__input4 {
+        width: 70px;
+        z-index: 1;
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &__span {
+        @include file-form;
+        border: 1px solid white;
+        height: 20px;
+    }
+    &__submit {
+        @include file-form;
+        border: 1px solid black;
+        bottom: 0;
+    }
+    &__button {
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        width: 100px;
+        cursor: pointer;
+        &:hover {
+            color: gray;
+        }
+    }  
+}

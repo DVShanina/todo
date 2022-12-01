@@ -1,0 +1,18 @@
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$border-radius: 5px;
+$font-size: 13px;
+
+@mixin file-form {
+    position: absolute;
+    width: 95px;
+    cursor: pointer;
+    text-align: center;
+    font-family: $font-family;
+    background-color: orange;
+    border-radius: 5px;
+    left: 0px;
+    padding: 5px 0;
+    &:hover {
+        background-color: #f0b55d;
+    }
+}
